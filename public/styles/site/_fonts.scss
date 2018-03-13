@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Molle:400i|Raleway');
+.navbar-brand {
+    font-family: 'Molle', cursive;
+}
+
+.glenn-miller {
+    font-family: 'Molle', cursive;
+}
+
+h1,h2,h3,h4,h5,h6, p,span,a,button,input {
+    font-family: 'Raleway', sans-serif;
+}
+
+p, span, a {
+    font-size: 1.6rem;
+}
+
+.text-50 {
+    display: flex;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(black, .1);
+    &-text {
+        width: 50%;
+    }
+}

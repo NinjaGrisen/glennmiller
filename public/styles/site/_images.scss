@@ -1,0 +1,18 @@
+.image-30 {
+    &__image {
+        height: 350px;
+        overflow: hidden;
+        background-size: cover;
+        margin-bottom: 24px;
+
+        &:nth-child(1) {
+            background-image: url(https://static1.squarespace.com/static/562b917be4b04e54c893f5ec/57bec1e7579fb351c736ab3c/57bec1e7579fb351c736ab3d/1472119277640/small19jpg.jpg?format=500w);
+        }
+        &:nth-child(2) {
+            background-image: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1449380878i/17278800._SX540_.jpg);
+        }
+        &:nth-child(3) {
+            background-image: url(https://www.wineonline.ca/media/wysiwyg/redwine_banner.jpg);
+        }
+    }
+}

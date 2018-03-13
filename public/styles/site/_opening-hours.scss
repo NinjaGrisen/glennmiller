@@ -1,0 +1,17 @@
+.opening-hours {
+    margin: 50px 0;
+
+
+    &__title {
+        font-weight: bold;
+    }
+    &__time {
+        border-bottom: 1px rgba(white, 0.4) dashed;
+        margin-right: 190px;
+    }
+    &__image {
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.pagination {
+    .disabled {
+        display: none;
+    }
+
+    .active {
+        a {
+            background: none;
+            font-weight: bold;
+            color: #333333;
+            border: none;
+            border-bottom: none;
+
+            &:hover {
+                background: none;
+                color: #333333;
+                border: none;
+                border-bottom: 1px solid #333333;
+            }
+        }
+    }
+
+    &> li > a,
+    &> li > span {
+        background: none;
+        color: #333333;
+        border: none;
+        border-bottom: none;
+
+        &:hover {
+            font-weight: bold;
+            background: none;
+            color: #333333;
+            border: none;
+            border-bottom: 1px solid #333333;
+            border-radius: 0;
+        }
+    }
+}

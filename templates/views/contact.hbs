@@ -1,44 +1,123 @@
 <div class="container">
-	<h1>Contact Us</h1>
+	<h1>Meny à la Glenn Miller Café</h1>
 </div>
 <div class="container">
+	{{{data.post.content.extended}}}
+	{{!-- 
 	<div class="row">
-		<div class="col-sm-8 col-md-6">
-			{{#if enquirySubmitted}}
-			<h3>Thanks for getting in touch.</h3>
-			{{else}}
-			<form method="post">
-				<input type="hidden" name="action" value="contact">
-				<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
-					<label>Name</label>
-					<input type="text" name="name.full"  class="form-control" value="{{formData.[name.full]}}">
-				</div>
-				<div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
-					<label>Email</label>
-					<input type="email" name="email" class="form-control" value="{{formData.email}}">
-				</div>
-				<div class="form-group">
-					<label>Phone</label>
-					<input type="text" name="phone" placeholder="(optional)" class="form-control" value="{{formData.phone}}">
-				</div>
-				<div class="form-group {{#if validationErrors.enquiryType}}has-error{{/if}}">
-					<label>What are you contacting us about?</label>
-					<select name="enquiryType" class="form-control">
-						<option value="">(select one)</option>
-						{{#each enquiryTypes}}
-						<option value="{{value}}">{{label}}</option>
-						{{/each}}
-					</select>
-				</div>
-				<div class="form-group {{#if validationErrors.message}}has-error{{/if}} ">
-					<label>Message</label>
-					<textarea name="message" placeholder="Leave us a message..." rows="4" class="form-control">{{formData.message}}</textarea>
-				</div>
-				<div class="form-actions">
-					<button type="submit" class="btn btn-primary">Send</button>
-				</div>
-			</form>
-			{{/if}}
+		<div class="col-xs-12">
+			<h2>Förrätter</h2>
+			<table class="table">
+				<tbody>
+					<tr>
+						<th><p>Velouté de tomats à la Provencale</p></th>
+						<td><p>Kryddig tomatsoppa med creme fraiche o vitlöksbröd</p></td>
+						<td><p>85:-</p></td>
+					</tr>
+					<tr>
+						<th><p>Tartine de Chèvre</p></th>
+						<td><p>Rökt sidfläsk, baconinlindade plommon</p></td>
+						<td><p>110:-</p></td>
+					</tr>
+					<tr>
+						<th><p>Terrine de Canard</p></th>
+						<td><p>Ankleverterrin med rostat bröd, frisée, valnötter</p></td>
+						<td><p>95:-</p></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="col-xs-12">
+			<h2>Huvudrätter</h2>
+			<table class="table">
+				<tbody>
+					<tr>
+						<th><p>Moules Marinières</p></th>
+						<td><p>Ångade blåmusslur i vitt vin, vitlök, echalôte, dragon </p></td>
+						<td><p>215:-</p></td>
+					</tr>
+				
+					<tr>
+						<th><p>Moules Crème</p></th>
+						<td><p>Ångade blåmusslur i vitt vin, vitlök, echalôte, dragon, grädde</p></td>
+						<td><p>225:-</p></td>
+					</tr>
+					<tr>
+						<th><p>Moules Chili</p></th>
+						<td><p>Ångade blåmusslor i  grädde, tomat, vitt vin, vitlök, echalôte, chorizo, paprika, chili, portvin</p></td>
+						<td><p>245:-</p></td>
+					</tr>
+					<tr>
+						<th><p>Moules Roquefort</p></th>
+						<td><p>Ångade blåmusslor i vitt vin,  grädde, vitlök, echalôte, roquefort, rosmarin, lime</p></td>
+						<td><p>245:-</p></td>
+					</tr>
+				
+					<tr>
+						<th><p>Moules Aiguillon</p></th>
+						<td><p>Ångade blåmusslur i vivin, vitlök, echalô , bacon, dijon, persilja, mat, ströbröd</p></td>
+						<td><p>225:-</p></td>
+					</tr>
+					<tr>
+						<th><p>Honungs och senapsmarinerad grillad Lammytterfilé</p></th>
+						<td><p>Serveras med rostad sötpotatis, sparris, rödvin/spiskummin-sås och vitlökscreme</p></td>
+						<td><p>315:-</p></td>
+					</tr>
+					<tr>
+						<th><p>Staeck frites</p></th>
+						<td><p>Biff Serveras med, frites, BBQ-sås, dijon, kryddsmö</p></td>
+						<td><p>295:-</p></td>
+					</tr>
+					<tr>
+						<th><p>Confit de Canard</p></th>
+						<td><p>Confiterad anka med fänkål, päron och roquefort-sås </p></td>
+						<td><p>245:-</p></td>
+					</tr>
+					<tr>
+						<th><p>Choucroute Garnie</p></th>
+						<td><p>Surkål i champagne, Morteau korv, Frankfurter, rökt sidfläsk, potatis, dijon</p></td>
+						<td><p>225:-</p></td>
+					</tr>
+
+					<tr>
+						<th><p>Salade Campagne veg/bacon</p></th>
+						<td><p>sallad, tomat, lök, ägg, paprika, potatis och grillad chèvre </p></td>
+						<td><p>195:-</p></td>
+					</tr>
+					<tr>
+						<th><p>Choucroute Garnie</p></th>
+						<td><p>serveras med citronpotatis, rostade betorpepparrot & brynt smör</p></td>
+						<td><p>225:-</p></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="col-xs-12">
+			<h2>Desserter</h2>
+			<table class="table">
+				<tbody>
+					<tr>
+						<th><p>Assiette fromages 2 av dagens ostar fikon i cognac</p></th>
+						<td><p>85:-</p></td>
+					</tr>
+
+					<tr>
+						<th><p>Glass & Sorbet, per kula</p></th>
+						<td><p>25:-</p></td>
+					</tr>
+					<tr>
+						<th><p>Belgisk Chokladtårta</p></th>
+						<td><p>85:-</p></td>
+					</tr>
+					<tr>
+						<th><p>Crème Brûlée</p></th>
+						<td><p>85:-</p></td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</div>
+	 --}}
 </div>

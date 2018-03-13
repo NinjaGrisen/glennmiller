@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Molle:400i|Raleway");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5821,8 +5822,30 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.navbar-brand {
+  font-family: 'Molle', cursive; }
+
+.glenn-miller {
+  font-family: 'Molle', cursive; }
+
+h1, h2, h3, h4, h5, h6, p, span, a, button, input {
+  font-family: 'Raleway', sans-serif; }
+
+p, span, a {
+  font-size: 1.6rem; }
+
+.text-50 {
+  display: flex;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .text-50-text {
+    width: 50%; }
+
 #header {
-  margin-top: 30px; }
+  background: white;
+  border-bottom: 1px solid #eeeeee; }
+  #header .navbar.navbar-default {
+    z-index: 9999; }
 
 #footer {
   margin-top: 30px;
@@ -5834,3 +5857,203 @@ button.close {
   display: block;
   max-width: 100%;
   height: auto; }
+
+.navbar {
+  margin-bottom: 0; }
+
+@media screen and (max-width: 768px) {
+  .navbar-default .navbar-collapse {
+    position: fixed;
+    background: white;
+    width: calc(100% + 15px);
+    left: 0;
+    margin-left: 0; }
+    .navbar-default .navbar-collapse li.active {
+      background: #e7e7e7; } }
+
+.index__hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 53px);
+  background-size: cover;
+  background-image: url(../images/hero_image.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  color: white; }
+  .index__hero h1 {
+    margin-top: 40vh;
+    position: relative;
+    width: 100%;
+    font-size: 10rem;
+    text-align: center;
+    text-shadow: 2px 0 0 black;
+    color: white; }
+    @media screen and (max-width: 930px) {
+      .index__hero h1 {
+        font-size: 7rem; } }
+    @media screen and (max-width: 600px) {
+      .index__hero h1 {
+        font-size: 5rem; } }
+  .index__hero span {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #191919;
+  font-weight: bold;
+  background: none; }
+  .navbar-default .navbar-nav > .active > a:after,
+  .navbar-default .navbar-nav > .active > a:hover:after,
+  .navbar-default .navbar-nav > .active > a:focus:after,
+  .navbar-default .navbar-nav > li > a:hover:after,
+  .navbar-default .navbar-nav > li > a:focus:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 11px;
+    width: 3px;
+    height: 3px;
+    background: #191919;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    box-shadow: 10px 0 0 #191919, -10px 0 0 #191919; }
+    @media screen and (max-width: 768px) {
+      .navbar-default .navbar-nav > .active > a:after,
+      .navbar-default .navbar-nav > .active > a:hover:after,
+      .navbar-default .navbar-nav > .active > a:focus:after,
+      .navbar-default .navbar-nav > li > a:hover:after,
+      .navbar-default .navbar-nav > li > a:focus:after {
+        display: none; } }
+
+.navbar-default .navbar-nav > li > a {
+  color: #191919; }
+
+.table tr:nth-child(even) {
+  background: #f7f7f7;
+  border-bottom: 1px solid #dedede; }
+
+.navbar-default {
+  background-color: transparent;
+  border: none; }
+
+.opening-hours {
+  margin: 50px 0; }
+  .opening-hours__title {
+    font-weight: bold; }
+  .opening-hours__time {
+    border-bottom: 1px rgba(255, 255, 255, 0.4) dashed;
+    margin-right: 190px; }
+  .opening-hours__image img {
+    width: 100%; }
+
+.wrapper {
+  padding: 40px 0;
+  color: #403123;
+  background: #e8e8e8; }
+
+.parallax-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+  .parallax-wrapper__table {
+    background-image: url(../images/hero-second_image.jpg); }
+
+.image-30__image {
+  height: 350px;
+  overflow: hidden;
+  background-size: cover;
+  margin-bottom: 24px; }
+  .image-30__image:nth-child(1) {
+    background-image: url(https://static1.squarespace.com/static/562b917be4b04e54c893f5ec/57bec1e7579fb351c736ab3c/57bec1e7579fb351c736ab3d/1472119277640/small19jpg.jpg?format=500w); }
+  .image-30__image:nth-child(2) {
+    background-image: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1449380878i/17278800._SX540_.jpg); }
+  .image-30__image:nth-child(3) {
+    background-image: url(https://www.wineonline.ca/media/wysiwyg/redwine_banner.jpg); }
+
+.news {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px; }
+  .news__wrapper.meny {
+    display: none; }
+  .news:hover {
+    text-decoration: none; }
+    .news:hover .read-more, .news:hover h2 {
+      text-decoration: underline; }
+  .news__text {
+    width: 50%;
+    padding: 0 48px 0 0; }
+    @media screen and (max-width: 768px) {
+      .news__text {
+        padding: 0 12px; } }
+  .news__image {
+    width: 50%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    height: 300px;
+    background-size: cover;
+    background-position: center; }
+  .news h2, .news p, .news a, .news span {
+    color: #333333; }
+  .news .read-more {
+    font-weight: bold; }
+  @media screen and (min-width: 768px) {
+    .news__wrapper:nth-child(odd) .news__text {
+      padding: 0 0 0 48px;
+      order: 2; }
+    .news__wrapper:nth-child(odd) .news__image {
+      order: 1; } }
+  @media screen and (max-width: 768px) {
+    .news__wrapper .news {
+      flex-wrap: wrap; }
+      .news__wrapper .news__text {
+        width: 100%;
+        padding: 0 24px;
+        order: 2; }
+      .news__wrapper .news__image {
+        width: 100%;
+        order: 1; } }
+
+.pagination .disabled {
+  display: none; }
+
+.pagination .active a {
+  background: none;
+  font-weight: bold;
+  color: #333333;
+  border: none;
+  border-bottom: none; }
+  .pagination .active a:hover {
+    background: none;
+    color: #333333;
+    border: none;
+    border-bottom: 1px solid #333333; }
+
+.pagination > li > a,
+.pagination > li > span {
+  background: none;
+  color: #333333;
+  border: none;
+  border-bottom: none; }
+  .pagination > li > a:hover,
+  .pagination > li > span:hover {
+    font-weight: bold;
+    background: none;
+    color: #333333;
+    border: none;
+    border-bottom: 1px solid #333333;
+    border-radius: 0; }
+
+.post img {
+  width: 100%;
+  margin-bottom: 24px; }

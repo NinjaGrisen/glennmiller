@@ -1,0 +1,14 @@
+.parallax-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    &__table {
+        background-image: url(../images/hero-second_image.jpg);
+    }
+}

@@ -1,5 +1,10 @@
 #header {
-	margin-top: 30px;
+    background: white;
+    border-bottom: 1px solid #eeeeee;
+
+    .navbar.navbar-default {
+        z-index: 9999;
+    }
 }
 
 #footer {
@@ -14,3 +19,21 @@
     max-width: 100%;
     height: auto;
 }
+.navbar {
+    margin-bottom: 0;
+}
+
+@media screen and(max-width:768px) {
+    .navbar-default .navbar-collapse {
+        position: fixed;
+        background: white;
+        width: calc(100% + 15px);
+        left: 0;
+        margin-left: 0;
+
+        li.active {
+            background: #e7e7e7;
+        }
+    }
+}
+    
